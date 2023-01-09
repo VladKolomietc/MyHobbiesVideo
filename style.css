@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Lobster&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Semi+Condensed&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar {
+    width: 0px;
+}
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+section {
+    position: fixed;
+    width: 100%;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.641);
+    bottom: 0;
+}
+#Button {
+    width: 150px;
+    font-size: 15px;
+    padding: 10px;
+    border: none;
+    background: rgb(49, 49, 49);
+    color: #fff;
+    cursor: pointer;
+}
+.text {
+    color: #fff;
+}
+#Button:hover {
+    background: #fff;
+    color: black;
+}
+.menu {   
+    position: relative;
+    display: flex;
+    justify-content: space-around; 
+    margin: 0 auto;
+    box-shadow: 0 0 20px rgb(54, 33, 25);
+    height: 75px;
+    width: 60%;
+    background: rgb(135,135,139);
+    background: linear-gradient(90deg, rgba(39, 60, 42, 0.696) 0%, rgba(255, 255, 255, 0.69) 35%, rgba(97, 73, 55, 0.712) 100%);
+    
+}
+.block {
+    background: rgba(0, 0, 0, 0.575);
+    width: 300px;
+    height: 300px;
+    margin: 50px;
+}
+.block_text  a {
+    color: rgb(100, 174, 127);
+}
+.Photo {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.image {
+    width: 300px;
+    height: 200px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5); 
+}
+.block_text{
+    font-family: 'Sofia Sans Semi Condensed', sans-serif; 
+    color: white;
+}
+.url {
+    display: inline-block;
+    position: relative;
+    padding-top: 20px;
+    font-size: 20px;
+    font-family: 'Kanit', sans-serif;
+    color: rgb(0, 0, 0);
+}
+.stay {
+    display: inline-block;
+    padding-top: 20px;
+    font-size: 20px;
+    font-family: 'Kanit', sans-serif;
+    color: rgb(28, 52, 31);
+}
+.url::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 30px;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+.url:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+a {
+    text-decoration: none;
+  }
+.Info_text {
+    font-size: 15px;
+    font-family: 'Kanit', cursive;
+}
+.info {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    height: 124px;
+    width: 100%;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgb(122, 122, 122) 0%, rgb(85, 85, 85) 100%);
+    margin-top: 90vh;
+}
+.git {
+    width: 40px;
+    height: 40px;
+}
+.you{
+    margin-left: 30px;
+    width: 30px;
+    height: 30px;
+}
+.Info_text:nth-of-type(2) {
+    margin-left: 10px;
+}
